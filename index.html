@@ -2,49 +2,83 @@
 <html>
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css" <html lang="en">
 <style>
-
   h1 {
     font-family: Lobster, monospace;
     color: black;
     text-align: center;
-    
+
   }
 
   p {
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     color: black;
-    text-align:center
+    text-align: center
   }
 
   .blue-box {
     background-color: #b5e9e9;
     padding: 100px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(226, 211, 211, 0.23);
   }
 
-  .pink-box {
+  .title {
     background-color: #fef6dd;
-    padding: 30px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   }
-  body {background-color: #ffe1d0}
+
+  .contact {
+    background-color: #dcf3d0;
+    text-align: center;
+  }
+
+  .card {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(226, 211, 211, 0.23);
+    padding: 30px;
+    margin-bottom: 20px;
+  }
+
+  a {
+    color: black;
+    font-family: 'Courier New', Courier, monospace
+  }
+
+  body {
+    background-color: #ffe1d0
+  }
 </style>
 
 <meta charset="utf-8">
 <title>Penelope Buda</title>
 <link rel="stylesheet" href="style.css">
 <script src="script.js"></script>
-`
+
 <body>
-  <div class="blue-box">
-    <div class="pink-box">
+  <section class="blue-box card">
+    <div class="title card">
 
       <h1><strong>Penelope Buda</strong></h1>
       <hr>
       <p>My Portfolio! Art, Stickers and, More!</p>
 
     </div>
-  </div>
+
+  </section>
+  <section class="title card">
+
+    <h1><strong>Blog</strong></h1>
+    <hr>
+    <p>Posts whenever I feel like it :)</p>
+
+  </section>
+
+  <section class="contact card">
+
+    <h1><strong>Contact Me!</strong></h1>
+    <hr>
+    <a href="https://www.instagram.com/penelopebuda_art/" target="_blank">Instagram!</a>
+
+  </section>
 
 </body>
 
