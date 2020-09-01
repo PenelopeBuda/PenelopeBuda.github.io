@@ -86,3 +86,8 @@ margin-right: auto;
 }
 
 
+.art {
+  width: 200px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(226, 211, 211, 0.23);
+  margin-left:20px;
+}
