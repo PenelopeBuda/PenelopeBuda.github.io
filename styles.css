@@ -2,7 +2,7 @@ h1 {
     font-family: Lobster, monospace;
     color: black;
     text-align: center;
-
+font-size: 30px;
   }
 
   p {
@@ -77,5 +77,9 @@ background-color: #dea6af
 
 #Back-button {
   margin-left: 30px;
+}
+.sticker {
+  width: 350px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(226, 211, 211, 0.23);
 }
 
