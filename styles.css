@@ -25,12 +25,13 @@ font-size: 30px;
 
   
   .titles {
-    background-color: #DEC9E5;
+    background-color: white;
   }
 
   .contact {
-    background-color: #dcf3d0;
+    background-color: #bfd8d2;
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
   }
 
   .card {
@@ -42,7 +43,7 @@ font-size: 30px;
     margin-top: 20px;
   }
   .blog-card {
-    background-color: #fff1b5;
+    background-color: #f7e9d9;
   }
 
   a {
@@ -52,7 +53,7 @@ font-size: 30px;
   }
 
   body {
-    background-color: #ffe1d0;
+    background-color: white;
     margin-left: -5px;
     margin-right: -5px;
   }
