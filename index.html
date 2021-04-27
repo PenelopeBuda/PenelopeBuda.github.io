@@ -6,8 +6,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>
+        Penelope Buda
+    </title>
     <style>
+        /* Mobile screen resolution*/
         .main {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -19,40 +22,13 @@
                 "contacts color3";
         }
 
-        @media (min-width: 800px) {
-            .main {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 500px repeat(3, 500px);
-                grid-template-areas:
-                    "title title"
-                    "art color1"
-                    "color2 blog"
-                    "contacts color3";
-            }
+        .tile {
+            margin-bottom: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+            width: 150px;
         }
 
-        /*  @media (min-width: 800px) {
-            .main {
-                grid-template-columns: 1fr;
-                grid-template-rows: repeat(7, 300px);
-                grid-template-areas:
-                    "title"
-                    "art"
-                    "color1"
-                    "color2"
-                    "blog"
-                    "contacts"
-                    "color3";
-                    max-width: 400px;
-
-            }
-
-            img {
-                width: 200px;
-            }
-        }
- */
         .title {
             grid-area: title;
             text-align: center;
@@ -79,12 +55,6 @@
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(226, 211, 211, 0.23);
         }
 
-        .tile {
-            margin-bottom: 20px;
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-
         .contacts {
             grid-area: contacts;
             background-color: rgb(218, 213, 213);
@@ -105,8 +75,7 @@
         }
 
         #banner-image {
-            height: 100%;
-
+            width: 355px;
         }
 
         #art-image {
@@ -120,6 +89,46 @@
         #contacts-image {
             height: 100%;
         }
+
+        /* Overrides for big screens */
+        @media (min-width: 800px) {
+            .main {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 500px repeat(3, 500px);
+                grid-template-areas:
+                    "title title"
+                    "art color1"
+                    "color2 blog"
+                    "contacts color3";
+            }
+
+            #banner-image {
+                width: 100%;
+            }
+        }
+
+        /*  @media (min-width: 800px) {
+            .main {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(7, 300px);
+                grid-template-areas:
+                    "title"
+                    "art"
+                    "color1"
+                    "color2"
+                    "blog"
+                    "contacts"
+                    "color3";
+                    max-width: 400px;
+
+            }
+
+            img {
+                width: 200px;
+            }
+        }
+ */
     </style>
 
     <script id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/d773d6e61e080fd6f4089fecc/4def33a4e7a229fd8e5457341.js");
@@ -129,13 +138,11 @@
 <body>
 
 
-    
+
     <div class="main">
 
         <section class="title tile">
-            <div>
                 <img id="banner-image" src="images/banner (1).png">
-            </div>
         </section>
 
         <section class="color3 tile">
